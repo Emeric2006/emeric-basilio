@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Enregistrement des étudiants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 5px;
+    }
+    .form-section {
+      margin-bottom: 15px;
+    }
+    .buttons input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enregistrement des étudiants</h2>
+
+  <fieldset>
+    <legend>État Civil</legend>
+    <div class="form-section">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom"><br>
+
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date"><br>
+
+      <label for="sexe">Sexe :</label>
+      <select id="sexe" name="sexe">
+        <option value="masculin">Masculin</option>
+        <option value="feminin">Féminin</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="contact">Contact :</label>
+      <input type="text" id="contact" name="contact">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Mes Diplômes</legend>
+    <input type="checkbox" id="cepi" name="diplome" value="CEPI">
+    <label for="cepi">CEPI</label>
+
+    <input type="checkbox" id="bepc" name="diplome" value="BEPC">
+    <label for="bepc">BEPC</label>
+
+    <input type="checkbox" id="bac" name="diplome" value="BAC">
+    <label for="bac">BAC</label>
+
+    <input type="checkbox" id="bts" name="diplome" value="BTS">
+    <label for="bts">BTS</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Votre Adresse</legend>
+    <textarea rows="3" cols="40" name="adresse"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Pays</legend>
+    <input type="radio" id="benin" name="pays" value="Benin">
+    <label for="benin">Benin</label>
+
+    <input type="radio" id="senegal" name="pays" value="Senegal">
+    <label for="senegal">Senegal</label>
+
+    <input type="radio" id="maroc" name="pays" value="Maroc">
+    <label for="maroc">Maroc</label>
+  </fieldset>
+
+  <div class="buttons">
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Effacer">
+    <input type="button" value="Quitter" onclick="window.close();">
+  </div>
+
+</body>
+</html>
